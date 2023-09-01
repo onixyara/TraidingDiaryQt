@@ -13,7 +13,7 @@ find_package(Qt6 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(TraidingDiaryQt main.cpp)
+add_executable(TraidingDiaryQt main.cpp src/Parser.cpp src/Parser.h src/Trade.h src/utility.h)
 target_link_libraries(TraidingDiaryQt
         Qt::Core
         Qt::Gui
